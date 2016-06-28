@@ -1,0 +1,36 @@
+﻿<div class="jumbotron">
+    <h1>File Upload Example</h1>
+    <p class="lead"></p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Upload Form</h2>
+        <form name="upload-form" method="post" action="api/upload" enctype="multipart/form-data">
+            <fieldset>
+                <legend></legend>
+                <input id="upload-file" type="file" name="upload-file" />
+                <div class="form-actions">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="upload-progress" class="progress" style="display: none;">
+            <div style="width: 0%" class="progress-bar progress-bar-striped active" role="progressbar"></div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="upload-alert" class="alert alert-info" role="alert" style="display: none;">
+            <button type="button" data-dismiss="alert" class="close">&times;</button>
+            <strong class="message"></strong>
+        </div>
+    </div>
+</div>
